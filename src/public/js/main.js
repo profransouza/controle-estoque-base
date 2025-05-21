@@ -1,0 +1,1 @@
+// Funcoes principais do sistema
