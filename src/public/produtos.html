@@ -12,26 +12,40 @@
       <nav></nav>
     <!-- Conteudo -->
      <main class="max-w-7xl mx-auto py-6 px-4">
-        <!-- Cards de Resumo -->
-         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-700 mb-2"> Total de Produtos</h3>
-                <p class="text-3xl font-bold text-sky-900" id="totalProdutos">120</p>
-            </div><!-- Card 01 -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-700 mb-2"> Valor Total em Estoque</h3>
-                <p class="text-3xl font-bold text-sky-900" id="totalValor">R$ 120,00</p>
-            </div><!-- Card 02 -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-700 mb-2"> Produtos com Baixo Estoque</h3>
-                <p class="text-3xl font-bold text-pink-800" id="produtosBaixoEstoque">3</p>
-            </div><!-- Card 03 -->
-            <div class="bg-white rounded-lg shadow p-6">
-                <h3 class="text-lg font-semibold text-gray-700 mb-2"> Total de Movimentações</h3>
-                <p class="text-3xl font-bold text-sky-900" id="totalMovimentacaoes">30</p>
-            </div><!-- Card 04 -->
+        <!-- Formulário de produtos -->
+         <div class="bg-white rounded-lg shadow p-6 mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Cadastrar Novo Produto</h2>
+
+            <!-- Formulário -->
+             <form id="produtoForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="codigo" class="block text-sm font-medium text-gray-700">Código</label>
+                        <input type="text" class="border rounded-md" name="codigo" id="codigo">
+                    </div><!-- Campo Código -->
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-gray-700">Nome</label>
+                        <input type="text" class="border rounded-md" name="nome" id="nome">
+                    </div><!-- Campo Nome -->
+                    <div>
+                        <label for="descricao" class="block text-sm font-medium text-gray-700">Descrição</label>
+                        <textarea name="descricao" id="descricao" class="border rounded-md"></textarea>
+                    </div><!-- Campo Descrição -->
+                    <div>
+                        <label for="categoria" class="block text-sm font-medium text-gray-700">Categoria</label>
+                        <select name="categoria_id" id="categoria" class="border rounded-md">
+                            <option value="">Selecione uma categoria</option>
+                            <!-- As opções serão preenchidas dinamicamente -->
+                        </select>
+                    </div><!-- Campo Categorias -->
+                    <div>
+                        <label for="categoria" class="block text-sm font-medium text-gray-700">Quantidade</label>
+                        <input type="number" name="quantidade" id="quantidade" class="border rounded-md">
+                    </div><!-- Campo Quantidade -->
+                </div>
+             </form>
          </div>
-        <!--/ Cards de Resumo -->
+        <!--/ Formlário de prdutos -->
 
         <!-- Produtos Recentes -->
          <div class="bg-white rounded-lg shadow">
